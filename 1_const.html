@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    // var se6 = 'tese'
+    // se6 = 'xinTex'
+    // console.log(se6)
+
+
+    // se3
+    // var BASE_URL = 'www.muke.com';
+    // BASE_URL =  'www.baidu.com'
+    // console.log(BASE_URL)
+
+    // es5
+    // Object.defineProperty(window, 'es5' ,{
+    //     value: 'es5Value',
+    //     writable: false
+    // })
+    // console.log(es5)
+    // es5 = 'es5Newvalue'
+    // console.log(es5)
+
+    // es6定义常量（不可改变值）
+    // es6
+    // const es6 = '2015Es6'
+    // console.log(es6)
+    // es6 = 'new2015Es6'
+    // console.log(es6)
+
+    // 声明即赋值
+    // const es6
+    // es6 = '2015es6'
+
+    // // 变量提升
+    // console.log(se6)
+    // var se6 = '2015es6'
+
+    // // 相当于
+    // var se6;
+    // console.log(se6)
+    // se6 = '2015es6'
+    
+
+    // // const定义 (不能提升变量)
+    // console.log(es6)
+    // const es6 = '2015es6'
+
+    // // 重复声明变量，最后一个会覆盖之前的变量
+    // var es6 = '2015es6'
+    // var es6 = 'new2015es6'
+    // console.log(es6)
+
+    // // 不能重复声明
+    // const es6 = '2015es6'
+    // const es6 = 'new2015es6'
+    // console.log(es6)
+
+
+    // var es6 = '2015es6'
+    // console.log(window.es6)
+
+    // 不属于顶层对象window
+    // const es6 = '2015es6'
+    // console.log(window.es6)
+
+
+    // if(true) {
+    //     console.log(es6)
+    //     var es6 = '2015es6'
+    // }
+    // console.log(es6)
+
+    // // 暂时性死区
+    // if(true) {
+    //     console.log(es6)
+    //     const es6 = '2015es6'
+    // }
+
+    // // 块级作用域
+    // if(true) {
+    //     const es6 = '2015es6'
+    // }
+    // console.log(es6)
+
+    // 1.不允许重复声明
+    // 2.不属于顶层对象window
+    // 3.暂时性死区
+    // 4.不存在变量提升
+    // 5.块级作用域
+
+
+
+    // // （内存地址）存储在栈内存， （对象 || 数组的内容）存储在堆内存  本质（变量指向内存地址没变）
+    // const es6Obj = {
+    //     name: 'es6',
+    //     year: '2015'
+    // }
+    // // console.log(es6Obj)
+    // Object.freeze(es6Obj)
+    // es6Obj.name = 'newEs6'
+    // console.log(es6Obj)
+
+
+    // const arr = ['es6','es7','es8']
+    // // 冻结浅层次 （赋值）
+    // Object.freeze(arr)
+    // arr[0] = '2015'
+    // console.log(arr)
+
+
+    // const es6Obj = {
+    //     name: 'es6',
+    //     year: '2015',
+    //     extension: ['es7','es8','es9']
+    // }
+
+    // // Object.freeze(es6Obj)
+    // freezeFun(es6Obj)
+    // es6Obj.extension[0] = '2016'
+    // console.log(es6Obj)
+
+    // //深层次冻结 (封装方法)
+    // function freezeFun(obj) {
+    //     Object.freeze(obj);
+    //     console.log(Object.keys(obj))
+    //     // 返回当前对象属性组成的数组
+    //     Object.keys(obj).forEach(function(key){
+    //         console.log(obj)
+    //         if(typeof obj[key] === 'object'){
+    //             // 递归冻结
+    //             freezeFun(obj[key])
+    //         }
+    //     })
+    // }
+</script>
+</html>

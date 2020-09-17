@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">按钮</button>
+</body>
+<script>
+    // // 函数的声明
+    // function num(a,b){
+    //     return a + b
+    // } 
+    // console.log(num(1,2))
+
+    // const num2 = function(a,b) {
+    //     return a + b
+    // } 
+    // console.log(num2(2,3))
+
+    // // 箭头函数
+    // const num3 = (a,b) => {
+    //     return a + b
+    // } 
+    // console.log(num3(3,3))
+
+    // // 方法体只有一行代码（简写）
+    // const num4 = (a,b) => a + b
+    // console.log(num4(4,4))
+
+    
+    // // 只有一行代码&&一个参数（简写）
+    // const num5 = a => a
+    // console.log(num5(5))
+
+    // const num6 = a =>{ 业务代码逻辑 }
+
+    // 指向当前对象（this）
+    // const btn = document.querySelector('#btn')
+    // btn.addEventListener('click',function(){
+    //     console.log(this) //this指向button丢向
+    //     this.style.background = 'red'
+    // })
+
+    // 事件的回调函数用箭头(this指向不同)
+    // const btn = document.querySelector('#btn')
+    // btn.addEventListener('click',() => {
+    //     console.log(this === window)
+    //     console.log(this) //这里指向window
+    //     // this.style.background = 'red'
+    // })
+
+    // // 对象里面的定语方法（this指向不同）
+    // const obj = {
+    //     name: 'huanggai',
+    //     name1: 'huanggai',
+    //     showName: function() {
+    //         console.log('我的名字是:' + this.name)
+    //     }
+    //     showName: () => {
+    //    console.log(this)
+    //         console.log('我的名字是:' + this.name)
+    //     }
+    //  对象定语方法的简写
+    //     showName() {
+    //         console.log('我的名字是:' + this.name1)
+    //     }
+    // }
+    // obj.showName()
+    
+    // // 箭头函数里不使用（arguments）
+    // function num ( x, y) {
+    //     console.log(arguments)
+    //     return x + y
+    // }
+    // num(2, 3)
+
+    // const num2 = (x, y) => {
+    //     console.log(arguments)
+    //     return x + y
+    // }
+    // num2(2, 3)
+
+    // // 类
+    // function Course (name, price) {
+    //     this.name = name
+    //     this.price = price
+    // }
+
+    // const Course =  (name, price) => {
+    //     // 箭头函数不能作为构造函数使用
+    //     this.name = name
+    //     this.price = price
+    // }
+
+
+    // Course.prototype.study = function() {
+    //     console.log(`我要学习:${this.name} + 价格:${this.price}`)
+    // }
+    // // 箭头函数不能定义原型下的方法
+    // Course.prototype.study = () => {
+    //     console.log(this) //window 下的name是空字符串
+    //     console.log(`我要学习:${this.name} + 价格:${this.price}`)
+    // }
+    // const c1 = new Course ('es6',50)
+    // console.log(c1)
+    // c1.study()
+
+
+</script>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<!-- 引入axios库 -->
+<script src="https://cdn.bootcdn.net/ajax/libs/axios/0.1.0/axios.js"></script>
+<script>
+    // const course = {
+    //     name: 'es6',
+    //     price: 500,
+    //     teacher: {
+    //         name: 'xiaoming',
+    //         age: 20
+    //     }
+    // }
+    // const name = course.name
+    // const price = course.price
+    // 解构赋值(sourseName别名)
+    // const {name: courseName, price, teacher:{name, age}} = course
+    // console.log(courseName, price, name, age)
+
+    // const arr = ['es6', 'es7', 'es8']
+    // // const a = arr[0]
+    // // const b = arr[1]
+    // // const c = arr[2]
+    // const [a, b, c] = arr
+    // console.log(a, b, c)
+
+
+    // const num = arr => {
+    //     let result = 0
+    //     for(let i=0; i<arr.length; i++){
+    //         result += arr[i]
+    //     }
+    //     return result
+    // }
+    
+    // 解构赋值例(数组)
+    // const num = ([a, b, c]) => {
+       
+    //     return a + b + c
+    // }
+    // console.log(num([1, 2, 3]))
+
+    // const obj = ({name, price, school = 'xx学校'}) => {
+    //     console.log(name, price, school)
+    // }
+    // obj({
+    //     name: 'es6',
+    //     price: 500,
+    //     school: 'mookc'
+    // })
+   
+    //    const obj = () => {
+    //        return {name: 'es6', price: 500}
+    //    }
+    //    const {name, price} = obj()
+    //    console.log(name, price)
+    
+    // let a = 1;
+    // let b = 2;
+    // // 没加分号会报错
+    // [b, a] = [a, b];
+    // console.log(a, b)
+    // // json
+    //    const obj = '{"name": "es6", "price": 500}'
+    //    const {name, price} = JSON.parse(obj)
+    //    console.log(name, price)
+    // 模拟axios请求
+    //    axios.get('./data.json').then(({name,price}) =>{
+    //        console.log(name,price)
+
+    //    })
+ /*    // 跳过
+    let arr = [1,2,3,4,5];
+	let [a,,,b]=arr;
+	console.log(a,b); */
+
+  /*   //4.剩余
+    let arr = [1,2,3,4,5];
+    let [a,...b]=arr;
+    console.log(a,b); */
+
+/*     //6.解构字符串
+    let [a,b,c] = '我爱我的祖国';
+    console.log(b); */
+
+    // 对象或数组
+    //    函数参数
+    //    函数返回值
+    //    变量赋值
+    //    JSON应用
+    //    Axios请求应用
+</script>
+</html>

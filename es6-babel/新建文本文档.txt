@@ -1,0 +1,4 @@
+npm install --global babel-cli 全局安装（本地安装无法使用babel 命令的问题改用全局安装可以解决）
+
+https://www.ecma-international.org/ecma-262/6.0 
+es6（官网）
